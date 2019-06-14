@@ -1,0 +1,13 @@
+print('='*5, 'EXERCICIO 4 ', '='*5)
+texto = input('Digite Algo')
+print('O tipo primitivo desse valor é: ', type(texto))
+print('Só tem espaços? ', texto.isspace())
+print('É alphanumerico? ', texto.isalnum())
+print('É alpha? ', texto.isalpha())
+print('É um numero decimal? ', texto.isdecimal())
+print('É um dígito? ', texto.isdigit())
+print('É possível imprimir? ', texto.isprintable())
+print('Esta escrito em minuscula? ', texto.islower())
+print('Está escrito em maiusculo? ', texto.isupper())
+print('Está captalizada? ', texto.istitle())
+
