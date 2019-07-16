@@ -1,0 +1,27 @@
+#Exercício Python 068: Faça um programa que jogue par ou ímpar com o computador.
+#O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
+from random import randint
+qtdeVitorias = 0
+print(f'VAMOS JOGAR PAR OU ÍMPAR'.center(30))
+while True:
+    pc = randint(0, 10)
+    n = int(input('Digite um número: '))
+    op = input('Par ou Ímpar? [P/I]')
+    if (op in ('pP')):
+        op = True
+    else:
+        op = False
+
+    if (pc + n) % 2 == 0:
+        numberPar = True
+    else:
+        numberPar = False
+
+    print(f'Você digitou {n} e o computador {pc}')
+    if op == numberPar:
+        print('You win...')
+        qtdeVitorias += 1
+    else:
+        print('You lose')
+        print(f'Você venceu {qtdeVitorias} vezes')
+        break
